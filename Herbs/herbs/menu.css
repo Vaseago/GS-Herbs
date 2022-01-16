@@ -1,0 +1,84 @@
+body {
+    background-color:  #9ea3a7;
+    background-size: cover;
+    color:  black;
+    font-size: 12px;
+}
+ol,ul {
+    list-style: none;
+}
+
+.cities {
+    margin-top: 18px;
+}
+
+#body,
+#city {
+    margin:  10px;
+    padding: 0;
+}
+
+#body li,
+#city li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+#scarlabel,
+#city a,
+#body a
+{
+    font-family: "URW Chancery L", cursive;
+    display: inline-block;
+    padding: 3px 8px;
+    text-decoration: none;
+    background-color: #173756;
+    color: #abb0b7;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#scarlabel
+    {
+        background-color: transparent;
+        color:  black;
+        position: absolute;
+        bottom: 8px;
+    }
+
+#scars {cursor pointer}
+
+
+#city a.active, 
+#body a.active,
+#city a:hover,
+#body a:hover
+ {
+    background-color:  #970707;
+    color: #9aabdf;
+}
+
+
+.city .items li {
+    display:  none;
+}
+.items li.minor::before {
+    content:  'Minor';
+    color:  #173756;
+    width:  55px;
+    display: inline-block;
+}
+
+.items li.major::before {
+    content:  'Major';
+    color:  #970707;
+    width:  55px;
+    display: inline-block;
+}
+
+.items li.missing::before {
+    content:  'Missing';
+    color:  #0f810f;
+    width:  55px;
+    display: inline-block;
+}

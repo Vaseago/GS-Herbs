@@ -1,0 +1,44 @@
+body {
+    background-color:  #403e26;
+    background-image:  url('parchment.jpg');
+    background-size: cover;
+    color:  #1c1b1b;
+}
+
+.city {
+    display:  none;
+}
+
+.city .items li {
+    display:  none;
+}
+
+
+.city .items li.minor {
+    color:  black;
+}
+
+.city .items li.major {
+    color:  black;
+}
+
+.items li.minor::before {
+    content:  'minor';
+    color:  blue;
+    width:  55px;
+    display: inline-block;
+}
+
+.items li.major::before {
+    content:  'major';
+    color:  red;
+    width:  55px;
+    display: inline-block;
+}
+
+.items li.missing::before {
+    content:  'missing';
+    color:  green;
+    width:  55px;
+    display: inline-block;
+}
